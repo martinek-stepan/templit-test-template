@@ -1,0 +1,25 @@
+{
+	"name": "{{PACKAGE_SCOPE}}/{{PACKAGE_NAME}}",
+	"version": "0.0.1",
+	"description": "Shared package test",
+	"author": "Stepan Martinek",
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"main": "./src/index.ts",
+	"exports": {
+		"main": "./dist/index.js",
+		"dev": "./src/index.ts",
+		"types": "./src/index.ts"
+	},
+	"scripts": {
+		"build": "tsc"
+	},
+	"engines": {
+		"node": "20"
+	},
+	"devDependencies": {
+		"@types/node": "20",
+		"typescript": "*"
+	}
+}
