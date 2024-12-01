@@ -1,0 +1,27 @@
+{
+	"name": "{{PACKAGE_SCOPE}}/{{PACKAGE_NAME}}",
+	"version": "0.0.1",
+	"description": "Cli tool test",
+	"author": "Stepan Martinek",
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"main": "./dist/cli.js",
+	"types": "./dist/cli.d.ts",
+	"bin": "dist/cli.js",
+	"scripts": {
+		"build": "tsc",
+		"debug": "tsx -C dev ./src/cli.ts"
+	},
+	"engines": {
+		"node": "20"
+	},
+	"dependencies": {
+		"{{COMMON_PACKAGE_NAME}}": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/node": "20",
+		"tsx": "*",
+		"typescript": "*"
+	}
+}
