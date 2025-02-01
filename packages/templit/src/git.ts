@@ -36,8 +36,6 @@ export const getRemotes = async (): Promise<Remote[]> => {
 			return null;
 		})
 		.filter((remote) => remote !== null);
-
-
 	
 	return remotes;
 };
